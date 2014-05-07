@@ -126,7 +126,7 @@ chrome.runtime.onMessage.addListener(
         }
 
         if (request['requestType'] && request['requestType'] == 'optionsChanged') {
-          console.log("Recieved optionsChanged message");
+          console.log("Received optionsChanged message");
           MoochSentinel.updateBlockingFilter();
           MoochSentinel.updateStatuses();
         }
